@@ -1,0 +1,137 @@
+// colors
+$userProfile: hsl(246, 80%, 60%);
+$workHeader: hsl(15, 100%, 70%);
+$playHeader: hsl(195, 74%, 62%);
+$studyHeader: hsl(348, 100%, 68%);
+$exerciseHeader: hsl(145, 58%, 55%);
+$socialHeader: hsl(264, 64%, 52%);
+$selfCareHeader: hsl(43, 84%, 65%);
+$backgroundColor: hsl(226, 43%, 10%);
+$timeSummary: hsl(235, 46%, 20%);
+$fontColor: hsl(236, 100%, 87%);
+
+// typography
+$fontSize: 18px !default;
+$fontFamily: Rubik;
+$fontWeight1: 300;
+$fontWeight2: 400;
+$fontWeight3: 500;
+
+body {
+    background-color: $backgroundColor;
+    font-family: "Rubik";
+    font-size: $fontSize;
+    color: $fontColor;
+}
+
+h1 {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    padding-top: 3%;
+    font-size: 1.3rem;
+    padding-bottom: 3%;
+}
+
+p {
+    line-height: 0;
+}
+
+.dashboard {
+    display: flex;
+    width: 62rem;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 39px;
+    margin-bottom: 23px;
+}
+
+.userHeader {
+    background-color: $timeSummary;
+    border-radius: 1rem;
+
+     .user {
+         background-color: $userProfile;
+         border-radius: 1rem;
+         padding: 14%;
+     }
+
+        img {
+            margin: 10px;
+            border: 3px solid white;
+            -webkit-border-radius: 500px;
+            width: 33%;
+        }
+}
+
+.reportType {
+    background-color: $timeSummary;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: flex-start;
+    padding-left: 14%;
+    padding-top: 8%;
+    justify-content: space-evenly;
+}
+
+.summary {
+    background-color: $timeSummary;
+    // border-radius: 1rem;
+    // padding: 0 12% 5% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.headerMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work {
+    background-color: $workHeader;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.header {
+    text-align: end;
+}
+
+.play {
+    background-color: $playHeader;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.study {
+    background-color: $studyHeader;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.exercise {
+    background-color: $exerciseHeader;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.social {
+    background-color: $socialHeader;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.selfCare {
+    background-color: $selfCareHeader;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+
