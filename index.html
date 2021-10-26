@@ -4,7 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="./sass/main.css" rel="stylesheet" />
-		<link href="https://fonts.google.com/specimen/Rubik" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 		<!-- displays site properly based on user's device -->
 
 		<link
@@ -31,7 +33,7 @@
 		<div class="dashboard">
 			<div class="userHeader">
 				<div class="user">
-					<img src='./images/image-jeremy.png' alt='User Profile Image' />
+					<img src="./images/image-jeremy.png" alt="User Profile Image" />
 					<p>Report for</p>
 					<h1>Jeremy Robson</h1>
 				</div>
@@ -43,83 +45,84 @@
 			</div>
 
 			<div class="timeCardInfo">
-				<div class="work" id="reportBox">
-					<div class="header">
-						<img src="./images/icon-work.svg" alt="briefcase icon" />	
-					</div>
-						
-					<div class="summary">
-						<div class="headerMenu">
-							<h2>Work</h2>
-							<img src="./images/icon-ellipsis.svg" />
+				<div class="columns">
+					<div class="work" id="reportBox">
+						<div class="header">
+							<img src="./images/icon-work.svg" alt="briefcase icon" />
 						</div>
-						<h1>32hrs</h1>
-						<p>Last Week - 36hrs</p>
-					</div>
-				</div>
-				<div class="play" id="reportBox">
-					<div class="header">
-						<img src="./images/icon-play.svg" alt="game controller icon" />
-					</div>
-					<div class="summary" id="reportBox">
-						<div class="headerMenu">
-							<h2>Play</h2>
-							<img src="./images/icon-ellipsis.svg" />
+						<div class="summary">
+							<div class="headerMenu">
+								<p>Work</p>
+								<img src="./images/icon-ellipsis.svg" />
+							</div>
+							<h1>32hrs</h1>
+							<p>Last Week - 36hrs</p>
 						</div>
-						<h1>10hrs</h1>
-						<p>Last Week - 8hrs</p>
 					</div>
-				</div>
-				<div class="study" id="reportBox">
-					<div class="header">
-						<img src="./images/icon-study.svg" alt="book icon" />
-					</div>
-					<div class="summary">
-						<div class="headerMenu">
-							<h2>Study</h2>
-							<img src="./images/icon-ellipsis.svg" />
+					<div class="play" id="reportBox">
+						<div class="header">
+							<img src="./images/icon-play.svg" alt="game controller icon" />
 						</div>
-						<h1>4hrs</h1>
-						<p>Last Week - 7hrs</p>
-					</div>
-				</div>
-				<div class="exercise" id="reportBox">
-					<div class="header">
-						<img src="./images/icon-exercise.svg" alt="excerise icon" />
-					</div>
-					<div class="summary">
-						<div class="headerMenu">
-							<h2>Exercise</h2>
-							<img src="./images/icon-ellipsis.svg" />
+						<div class="summary" id="reportBox">
+							<div class="headerMenu">
+								<p>Play</p>
+								<img src="./images/icon-ellipsis.svg" />
+							</div>
+							<h1>10hrs</h1>
+							<p>Last Week - 8hrs</p>
 						</div>
-						<h1>4hrs</h1>
-						<p>Last Week - 5hrs</p>
 					</div>
-				</div>
-				<div class="social" id="reportBox">
-					<div class="header">
-						<img src="./images/icon-social.svg" alt="text bubble icon" />
-					</div>
-					<div class="summary">
-						<div class="headerMenu">
-							<h2>Social</h2>
-							<img src="./images/icon-ellipsis.svg" />
+					<div class="study" id="reportBox">
+						<div class="header">
+							<img src="./images/icon-study.svg" alt="book icon" />
 						</div>
-						<h1>5hrs</h1>
-						<p>Last Week - 10hrs</p>
-					</div>
-				</div>
-				<div class="selfCare" id="reportBox">
-					<div class="header">
-						<img src="./images/icon-self-care.svg" alt="heart icon" />
-					</div>
-					<div class="summary">
-						<div class="headerMenu">
-							<h2>Self Care</h2>
-							<img src="./images/icon-ellipsis.svg" />
+						<div class="summary">
+							<div class="headerMenu">
+								<p>Study</p>
+								<img src="./images/icon-ellipsis.svg" />
+							</div>
+							<h1>4hrs</h1>
+							<p>Last Week - 7hrs</p>
 						</div>
-						<h1>2hrs</h1>
-						<p>Last Week - 2hrs</p>
+					</div>
+					<div class="exercise" id="reportBox">
+						<div class="header">
+							<img src="./images/icon-exercise.svg" alt="excerise icon" />
+						</div>
+						<div class="summary">
+							<div class="headerMenu">
+								<p>Exercise</p>
+								<img src="./images/icon-ellipsis.svg" />
+							</div>
+							<h1>4hrs</h1>
+							<p>Last Week - 5hrs</p>
+						</div>
+					</div>
+					<div class="social" id="reportBox">
+						<div class="header">
+							<img src="./images/icon-social.svg" alt="text bubble icon" />
+						</div>
+						<div class="summary">
+							<div class="headerMenu">
+								<p>Social</p>
+								<img src="./images/icon-ellipsis.svg" />
+							</div>
+							<h1>5hrs</h1>
+							<p>Last Week - 10hrs</p>
+						</div>
+					</div>
+					<div class="selfCare" id="reportBox">
+						<div class="header">
+							<img src="./images/icon-self-care.svg" alt="heart icon" />
+						</div>
+						<div class="summary">
+							<div class="headerMenu">
+								<p>Self Care</p>
+								<img src="./images/icon-ellipsis.svg" />
+							</div>
+							<h1>2hrs</h1>
+							<p>Last Week - 2hrs</p>
+						</div>
 					</div>
 				</div>
 			</div>

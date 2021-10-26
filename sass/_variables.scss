@@ -8,63 +8,77 @@ $socialHeader: hsl(264, 64%, 52%);
 $selfCareHeader: hsl(43, 84%, 65%);
 $backgroundColor: hsl(226, 43%, 10%);
 $timeSummary: hsl(235, 46%, 20%);
-$fontColor: hsl(236, 100%, 87%);
+$pColor: hsl(236, 100%, 87%);
+$inactiveA: hsl(235, 45%, 61%);
 
 // typography
 $fontSize: 18px !default;
-$fontFamily: Rubik;
+$fontFamily: 'Rubik', sans-serif;
 $fontWeight1: 300;
 $fontWeight2: 400;
 $fontWeight3: 500;
 
 body {
     background-color: $backgroundColor;
-    font-family: "Rubik";
+    font-family: $fontFamily;
     font-size: $fontSize;
-    color: $fontColor;
-}
-
-h1 {
     color: white;
 }
 
-a {
-    text-decoration: none;
-    padding-top: 3%;
-    font-size: 1.3rem;
-    padding-bottom: 3%;
+h1 {
+    font-weight: $fontWeight1;
+}
+
+h2 {
+    font-weight: $fontWeight2;
 }
 
 p {
-    line-height: 0;
+    color: $pColor;
+    font-weight: $fontWeight1;
 }
 
 .dashboard {
     display: flex;
-    width: 62rem;
-    margin-top: 4%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 39px;
-    margin-bottom: 23px;
+    justify-content: center;
+    margin-top: 8%;
+    margin-bottom: 7%;
+    
 }
 
 .userHeader {
     background-color: $timeSummary;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    // align-items: flex-start;
+    // align-content: space-around;
+    // height: 100%;
+    width: 16%;
 
-     .user {
-         background-color: $userProfile;
-         border-radius: 1rem;
-         padding: 14%;
-     }
-
-        img {
-            margin: 10px;
-            border: 3px solid white;
-            -webkit-border-radius: 500px;
-            width: 33%;
+        .user {
+            background-color: $userProfile;
+            border-radius: 1rem;
+            padding-top: 7%;
+            padding-left: 12%;
         }
+
+            img {
+                margin: 10px;
+                border: 3px solid white;
+                -webkit-border-radius: 500px;
+                width: 30%;
+            }
+
+                p {
+                    padding-top: 10%;
+                    margin: 0;
+                }
+
+                h1 {
+                    margin: 0;
+                    padding-bottom: 47%;
+                }
 }
 
 .reportType {
@@ -73,65 +87,103 @@ p {
     flex-direction: column;
     text-decoration: none;
     align-items: flex-start;
-    padding-left: 14%;
-    padding-top: 8%;
-    justify-content: space-evenly;
+    border-radius: inherit;
+    padding-left: 12%;
+
+        a {
+            text-decoration: none;
+            padding-top: 8%;
+            font-size: 1.3rem;
+            padding-bottom: 5%;
+            color: $inactiveA;
+        }
 }
 
 .summary {
     background-color: $timeSummary;
-    // border-radius: 1rem;
-    // padding: 0 12% 5% 12%;
+    border-radius: 1rem;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: stretch;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 10%;
+    line-height: 0;
+    width: auto;
 }
 
 .headerMenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 5%;
+
+    p {
+        color: white;
+    }
+}
+
+.columns {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: stretch;
+    justify-content: space-evenly;
+    row-gap: 1.5rem;
 }
 
 .work {
     background-color: $workHeader;
     border-radius: 1rem;
-    margin: 1rem;
+    // margin: 1rem;
 }
 
 .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     text-align: end;
+    height: 3rem;
+    overflow: hidden;
+    padding-right: 5%;
+
+     img {
+        margin-top: .5rem;
+        //  width: 34%;
+     }
 }
 
 .play {
     background-color: $playHeader;
     border-radius: 1rem;
-    margin: 1rem;
+    // margin: 1rem;
+
+     #reportBox {
+         width: auto;
+     }
 }
 
 .study {
     background-color: $studyHeader;
     border-radius: 1rem;
-    margin: 1rem;
+    // margin: 1rem;
 }
 
 .exercise {
     background-color: $exerciseHeader;
     border-radius: 1rem;
-    margin: 1rem;
+    // margin: 1rem;
 }
 
 .social {
     background-color: $socialHeader;
     border-radius: 1rem;
-    margin: 1rem;
+    // margin: 1rem;
 }
 
 .selfCare {
     background-color: $selfCareHeader;
     border-radius: 1rem;
-    margin: 1rem;
+    // margin: 1rem;
 }
 
 

@@ -1,53 +1,69 @@
 body {
   background-color: #0f1424;
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
-  color: #bdc1ff;
-}
-
-h1 {
   color: white;
 }
 
-a {
-  text-decoration: none;
-  padding-top: 3%;
-  font-size: 1.3rem;
-  padding-bottom: 3%;
+h1 {
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: 400;
 }
 
 p {
-  line-height: 0;
+  color: #bdc1ff;
+  font-weight: 300;
 }
 
 .dashboard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 62rem;
-  margin-top: 4%;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 39px;
-  margin-bottom: 23px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 8%;
+  margin-bottom: 7%;
 }
 
 .userHeader {
   background-color: #1c1f4a;
   border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 16%;
 }
 
 .userHeader .user {
   background-color: #5847eb;
   border-radius: 1rem;
-  padding: 14%;
+  padding-top: 7%;
+  padding-left: 12%;
 }
 
 .userHeader img {
   margin: 10px;
   border: 3px solid white;
   -webkit-border-radius: 500px;
-  width: 33%;
+  width: 30%;
+}
+
+.userHeader p {
+  padding-top: 10%;
+  margin: 0;
+}
+
+.userHeader h1 {
+  margin: 0;
+  padding-bottom: 47%;
 }
 
 .reportType {
@@ -63,17 +79,37 @@ p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-left: 14%;
+  border-radius: inherit;
+  padding-left: 12%;
+}
+
+.reportType a {
+  text-decoration: none;
   padding-top: 8%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  font-size: 1.3rem;
+  padding-bottom: 5%;
+  color: #6f76c8;
 }
 
 .summary {
   background-color: #1c1f4a;
   border-radius: 1rem;
-  padding: 0 12% 5% 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10%;
+  line-height: 0;
+  width: auto;
 }
 
 .headerMenu {
@@ -86,64 +122,85 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 5%;
+}
+
+.headerMenu p {
+  color: white;
+}
+
+.columns {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  row-gap: 1.5rem;
 }
 
 .work {
   background-color: #ff8c66;
   border-radius: 1rem;
-  margin: 1rem;
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: end;
+  height: 3rem;
+  overflow: hidden;
+  padding-right: 5%;
+}
+
+.header img {
+  margin-top: .5rem;
 }
 
 .play {
   background-color: #56c2e6;
   border-radius: 1rem;
-  margin: 1rem;
+}
+
+.play #reportBox {
+  width: auto;
 }
 
 .study {
   background-color: #ff5c7c;
   border-radius: 1rem;
-  margin: 1rem;
 }
 
 .exercise {
   background-color: #4acf81;
   border-radius: 1rem;
-  margin: 1rem;
 }
 
 .social {
   background-color: #7536d3;
   border-radius: 1rem;
-  margin: 1rem;
 }
 
 .selfCare {
   background-color: #f1c65b;
   border-radius: 1rem;
-  margin: 1rem;
 }
 
-.timeCardInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.timeCardInfo #reportBox {
-  width: 29%;
+#reportBox {
+  width: 30%;
+  border-radius: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
