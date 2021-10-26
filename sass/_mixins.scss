@@ -1,33 +1,144 @@
-// // @mixin timeCardsRow {
+@mixin flexColumn {
+	display: flex;
+	flex-direction: column;
+}
 
-// // }
-
-// @mixin name {
-// }
-
-// .timeCardInfo {
-// 	display: flex;
-// 	align-items: center;
-// 	flex-wrap: wrap;
-// 	width: 100%;
-// 	align-items: flex-end;
-// 	justify-content: space-evenly;
-// 	flex-wrap: wrap;
-// 	flex-direction: row;
-// 	width: 80%;
-// 	min-height: 300px;
-// 	margin: 0 auto;
-
-#reportBox {
-	// flex-grow: 1;
-	width: 30%;
-	// margin: 4%;
-	// padding: 1rem;
-	// margin-top: -1.3rem;
+@mixin roundBorderColor($base: $backgroundColor) {
+	background-color: $base;
 	border-radius: 1rem;
 }
-// }
 
-// #id {
-//     width:33%
-// }
+.dashboard {
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+    margin-bottom: 7%;
+    
+}
+
+.userHeader {
+    @include roundBorderColor($base: $timeSummary);
+    @include flexColumn;
+    width: 16%;
+
+	.user {
+		@include roundBorderColor($base: $userProfile);
+		padding-top: 7%;
+		padding-left: 12%;
+	}
+
+		img {
+			margin: 10px;
+			border: 3px solid white;
+			-webkit-border-radius: 500px;
+			width: 30%;
+		}
+
+		p {
+			padding-top: 10%;
+			margin: 0;
+		}
+
+		h1 {
+			margin: 0;
+			padding-bottom: 47%;
+		}
+
+			.reportType {
+				@include flexColumn;
+				@include roundBorderColor($base: $timeSummary);
+				text-decoration: none;
+				align-items: flex-start;
+				padding-left: 12%;
+			}
+				a {
+					text-decoration: none;
+					padding-top: 8%;
+					font-size: 1.3rem;
+					padding-bottom: 5%;
+					color: $inactiveA;
+				}
+
+				a:active {
+					color: white;
+				}
+}
+
+.columns {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: stretch;
+    justify-content: space-evenly;
+    row-gap: 1.5rem;
+
+
+}
+
+.work {
+	@include roundBorderColor($base: $workHeader);
+}
+
+.play {
+	@include roundBorderColor($base: $playHeader);
+
+     #reportBox {
+         width: auto;
+     }
+}
+
+.study {
+	@include roundBorderColor($base: $studyHeader);
+}
+
+.exercise {
+	@include roundBorderColor($base: $exerciseHeader);
+}
+
+.social {
+	@include roundBorderColor($base: $socialHeader);
+}
+
+.selfCare {
+	@include roundBorderColor($base: $selfCareHeader);
+}
+	
+#reportBox {
+	width: 30%;
+	border-radius: 1rem;
+
+		.header {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			text-align: end;
+			height: 3rem;
+			overflow: hidden;
+			padding-right: 5%;
+		
+			img {
+				margin-top: .5rem;
+			}
+		}
+
+		.summary {
+			@include roundBorderColor($base: $timeSummary);
+			@include flexColumn;
+			align-items: stretch;
+			justify-content: space-between;
+			padding: 10%;
+			line-height: 0;
+			width: auto;
+		
+				.headerMenu {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding-bottom: 5%;
+		
+				p {
+					color: white;
+				}
+			}
+		}
+}
