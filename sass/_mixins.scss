@@ -57,11 +57,13 @@
 					font-size: 1.3rem;
 					padding-bottom: 5%;
 					color: $inactiveA;
+
+					&:active {
+						color: white;
+					}
 				}
 
-				a:active {
-					color: white;
-				}
+				
 }
 
 .columns {
