@@ -124,11 +124,11 @@ workCurrentHours[5].textContent = siteContent['timeframesSelfCare']['daily']['cu
 // previous hours
 const previousHours = document.querySelectorAll('.summary p')
 previousHours[1].textContent = siteContent['timeframesWork']['daily']['previous'];
-previousHours[2].textContent = siteContent['timeframesPlay']['daily']['previous'];
-previousHours[3].textContent = siteContent['timeframesStudy']['daily']['previous'];
-previousHours[4].textContent = siteContent['timeframesExercise']['daily']['previous'];
-previousHours[5].textContent = siteContent['timeframesSocial']['daily']['previous'];
-previousHours[6].textContent = siteContent['timeframesSelfCare']['daily']['previous'];
+previousHours[3].textContent = siteContent['timeframesPlay']['daily']['previous'];
+previousHours[5].textContent = siteContent['timeframesStudy']['daily']['previous'];
+previousHours[7].textContent = siteContent['timeframesExercise']['daily']['previous'];
+previousHours[9].textContent = siteContent['timeframesSocial']['daily']['previous'];
+previousHours[11].textContent = siteContent['timeframesSelfCare']['daily']['previous'];
 
 // const push = (document.querySelector('h1').onClick = displayInfo);
 
